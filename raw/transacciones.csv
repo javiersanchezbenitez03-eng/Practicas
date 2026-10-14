@@ -1,0 +1,6 @@
+id_transaccion,cliente,monto,categoria,fecha,activo
+101,Juan Perez,1500.50,Electronica,2026-10-01,True
+102,Maria Gomez,3200.00,Ropa,2026-10-02,True
+103,Carlos Ruiz,450.25,Alimentos,2026-10-02,False
+104,Ana Lopez,12500.00,Electronica,2026-10-03,True
+105,Pedro Sanchez,850.00,Hogar,2026-10-04,Truex
