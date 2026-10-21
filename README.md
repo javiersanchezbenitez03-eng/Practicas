@@ -1,4 +1,4 @@
-# Prácticas de Ingeniería de Datos con AWS S3 y Python
+# Prácticas de Datos con AWS S3 y Python
 
 Este repositorio contiene una serie de prácticas y scripts diseñados para el procesamiento de datos, ingesta en la nube con **Amazon Web Services (AWS S3)**, perfilamiento, limpieza, modelado dimensional y pipelines **ETL hacia PostgreSQL**.
 
