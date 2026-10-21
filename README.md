@@ -1,6 +1,6 @@
 Prácticas de Ingeniería de Datos con AWS S3 y Python
-
-Este repositorio contiene una serie de prácticas y scripts diseñados para el procesamiento de datos, ingesta en la nube con Amazon Web Services (AWS S3), perfilamiento, limpieza, modelado dimensional y pipelines ETL hacia PostgreSQL.
+ 
+prácticas y scripts diseñados para el procesamiento de datos, ingesta en la nube con Amazon Web Services (AWS S3), perfilamiento, limpieza, modelado dimensional y pipelines ETL hacia PostgreSQL.
 
 📂 Estructura del Repositorio
 
@@ -53,7 +53,7 @@ Instala las dependencias necesarias ejecutando:
 pip install -r requirements.txt
 
 
-Nota: Las librerías principales instaladas son: boto3, pandas, psycopg2-binary, sqlalchemy, python-dotenv y faker.
+Nota: Las librerías principales utilizadas son boto3, pandas, psycopg2-binary, sqlalchemy, python-dotenv y faker.
 
 🐘 Configuración de PostgreSQL
 
@@ -73,7 +73,7 @@ brew install postgresql
 brew services start postgresql
 
 
-Windows: Descarga e instala el instalador ejecutable desde el sitio oficial de PostgreSQL Downloads.
+Windows: Descarga e instala la versión correspondiente desde el sitio oficial de PostgreSQL Downloads.
 
 2. Configurar Usuario y Base de Datos
 
@@ -82,7 +82,7 @@ Accede a la consola interactiva de PostgreSQL (psql):
 sudo -u postgres psql
 
 
-Ejecuta las siguientes sentencias SQL para crear la base de datos y un usuario dedicado para el proyecto:
+Ejecuta las siguientes sentencias SQL para crear la base de datos y un usuario dedicado:
 
 -- Crear la base de datos
 CREATE DATABASE db_practicas;
@@ -96,11 +96,7 @@ GRANT ALL PRIVILEGES ON DATABASE db_practicas TO usuario_etl;
 
 🔑 Configuración de Credenciales y Tokens (Variables de Entorno)
 
-Para interactuar con AWS S3 y PostgreSQL de forma segura, crea un archivo llamado .env en la raíz de tu proyecto.
-
-Crear el archivo .env
-
-Crea el archivo .env y asigna tus credenciales:
+Crea un archivo llamado .env en la raíz del proyecto para definir las credenciales de AWS S3 y PostgreSQL:
 
 # ==========================================
 # CREDENCIALES DE AWS (S3)
@@ -122,6 +118,8 @@ POSTGRES_PASSWORD=tu_contraseña_segura
 
 
 🚀 Flujo de Ejecución
+
+Puedes ejecutar cada etapa de manera independiente según el flujo del proyecto:
 
 Generar los datos sintéticos iniciales:
 
@@ -153,3 +151,4 @@ python etl_s3_postgres.py
 Ejecución del Pipeline Completo (Automatizado):
 
 python main.py
+
